@@ -12,10 +12,12 @@
             .header-information { margin-top: 3rem; }
             .header-link-bay { width: 21%; }
 
+            .detail { width: 70%; }
+
             @media only screen and (max-width:1000px) {
                 body { min-width: 800px; max-width: 1000px; }
                 h1 { font-size: 5rem; }
-                h3 { font-size: 3rem; }
+                h3 { font-size: 3.5rem; }
                 h4 { font-size: 2.8rem; }
                 h5 { font-size: 2.5rem; }
                 div { font-size:1.5em; }
@@ -24,6 +26,8 @@
                 .header-information { margin-top:6rem; }
                 .header-link-bay { width:33rem; margin: 5rem auto; }
                 .header-link { font-size:3rem; padding: 2rem;}
+
+                .detail { width: 90%; }
             }
         </style>
     </head>
@@ -39,8 +43,8 @@
                     </div>
 
                     <div class="header-link-bay">
-                            <a href="#projects" class="header-link" style="color:white;">Projects</a>
-                            <a href="#about-me" class="header-link" style="color:white;">About Me</a>               
+                        <a href="#projects" class="header-link" style="color:white;">Projects</a>
+                        <a href="#about-me" class="header-link" style="color:white;">About Me</a>               
                     </div>
                 </div>
             </div>
@@ -50,7 +54,7 @@
             <h3 id="projects" class="center-text row" style="margin-top: 2rem;">Projects</h3>
             <section>
                 <h4 class="center-text">Verbkit</h4>
-                <div class="float-center" style="width:70%">
+                <div class="float-center detail">
                     Verbit is a declarive TypeScript API for building browser-based video games. 
                     The premise of the project is to reduce the burden of developing games
                     by providing pre-built components common across many 2D video games.
