@@ -2,13 +2,57 @@
 
 <html>
     <head>
+        <link rel="stylesheet" href="./css/foundation.css"/>
         <style>
-            body { background-color: #00b2ff; }
+            h1, h3, h5, div {
+                font-family: proxima-nova, sans-serif
+            }
+
+            .center-text { text-align: center; }
         </style>
     </head>
     <body>
+        <header>
+            <div style="background-color:#2d5fa5; height:15rem;">
+                <div class="row">
+                    <div style="margin-top: 3rem;">
+                        <h1 style="color:white; text-align:center;">Everette Moses</h1>
+                        <h5 style="color:white; text-align:center;">Web Developer &amp; Software Engineer</h5>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:2rem">
+                    <div class="large-6 columns">
+                        <a href="#projects" class="float-right" style="color:white;">Projects</a>
+                    </div>
+                    <div class="large-6 columns">
+                        <a href="#about-me" style="color:white;">About Me</a>
+                    </div>                
+                </div>
+            </div>
+        </header>
+
         <div>
-            <h1 style="color: white;">Everette Moses</h1>
+            <h3 id="projects" class="center-text row" style="margin-top: 2rem;">Projects</h3>
+            <section>
+                <h4 class="center-text">Verbkit</h4>
+                <div class="float-center" style="width:70%">
+                    Verbit is a declarive TypeScript API for building browser-based video games. 
+                    The premise of the project is to reduce the burden of developing games
+                    by providing pre-built components common across many 2D video games.
+                    Moreover, Verbkit comes with an API that allows for more components to be
+                    built by users, so that they can create games Verbkit doesn't support out the box. 
+                    <br/><br/>
+                    Verbkit took a declarative approach for its API to allow users to state the world and all
+                    the game objects involved with this world. These worlds are their own script that exists
+                    in the game directory.
+                </div>
+            </section>
+
+            <h3 id="about-me" class="center-text row" style="margin-top: 2rem;">About Me</h3>
+            <section>
+                <h4 class="center-text">Radia</h4>
+            </section>
         </div>
     </body>
 </html>
