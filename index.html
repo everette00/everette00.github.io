@@ -9,8 +9,10 @@
             }
 
             .center-text { text-align: center; }
+            .header-link-bay { width: 21%; }
 
             @media only screen and (max-width:1000px) {
+                body { min-width: 800px; max-width: 1000px; }
                 h1 { font-size: 5rem; }
                 h3 { font-size: 3rem; }
                 h4 { font-size: 2.8rem; }
@@ -18,7 +20,8 @@
                 div { font-size:1.5em; }
                 
                 .header { height:30rem; background-color: #2d5fa5; }
-                .header-link {font-size:3rem; }
+                .header-link-bay { min-width:41%; max-width:41%; margin: 2rem auto; }
+                .header-link { font-size:3rem; }
             }
         </style>
     </head>
@@ -33,9 +36,9 @@
                         </div>
                     </div>
 
-                    <div style="width: 21%; margin: 2rem auto;">
-                            <a href="#projects" class="header-link" style="color:white; padding-left:1rem; padding-right: 1rem;">Projects</a>
-                            <a href="#about-me" class="header-link" style="color:white; padding-left:1rem; padding-right: 1rem;">About Me</a>               
+                    <div class="header-link-bay">
+                            <a href="#projects" class="header-link" style="color:white;">Projects</a>
+                            <a href="#about-me" class="header-link" style="color:white;">About Me</a>               
                     </div>
                 </div>
             </div>
