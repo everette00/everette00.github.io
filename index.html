@@ -21,9 +21,9 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top:2rem">
+                <div class="row large-centered columns" style="width: 21%; margin-top:2rem;">
                     <div class="large-6 columns">
-                        <a href="#projects" class="float-right" style="color:white;">Projects</a>
+                        <a href="#projects" style="color:white;">Projects</a>
                     </div>
                     <div class="large-6 columns">
                         <a href="#about-me" style="color:white;">About Me</a>
@@ -46,12 +46,49 @@
                     Verbkit took a declarative approach for its API to allow users to state the world and all
                     the game objects involved with this world. These worlds are their own script that exists
                     in the game directory.
+                    <br/><br/>
+                    If you're interested in the project head over to 
+                    <a href="https://github.com/everette00/verbkit">https://github.com/everette00/verbkit</a>
+                    to check the project out! It's fully open source and free to use how ever you wish!
                 </div>
+            </section>
+            <section>
+                <h4 class="center-text row" style="margin-top:2rem;">IGN Code Foo Application</h4>
+                <div class="float-center" style="width:70%; margin-top:1rem;">
+                    This is my Github repo containing my application for the IGN Codfoo 2016 internship.
+                    IGN required applicants to solve a few problems, the first being how many lego pieces
+                    would be needed to rebuild the San-Francisco Golden Gate Bridge. Then we were asked to
+                    choose one of three projects, or multiple projects, to build. I chose the AZERTY Keyboard,
+                    ISO8601 datetime parser, and the Scrabble word finder.<br/><br/>
+
+                    <h5>AZERTY Keyboard</h5>
+                    The AZERTY Keyboard problem required applicants to build a keyboard translater between
+                    their arbitrarily-built AZERTY keyboard (in which one key stuck with typed with) and
+                    the standard QWERTY keyboard. The solution used a hashmap to translate keys and a regexp to clean
+                    successive uses of the sticky key.<br/><br/>
+
+                    <h5>ISO8601</h5>
+                    The ISO8601 datetime parser problem provided applicants a series of different datetime formats
+                    that were to be parsed into the ISO8601 format. My solution stripped information from the provided
+                    format and used several techniques to determine what was read - what the month was; the day; year;
+                    time, etc. The information was then utilized to build a new string that followed the format.<br/><br/>
+                    
+                    <h5>Scrabble Word Finder</h5>
+                    Lastly, the Scrabble word finder took input from the user on what their letter bank was and
+                    compared the letters to a dictionary of words provided by IGN. The purpose was to find the best
+                    possible word the user could generate. So once impossible words were filtered out, the remaining
+                    words were measured out for the highest score. Those words were then added to a list of best possible words,
+                    with its score.
+                </div>
+            </section>
+
+            <section>
+                <h4 class="center-text row" style="margin-top:2rem;">Radia</h4>
+                <div>
             </section>
 
             <h3 id="about-me" class="center-text row" style="margin-top: 2rem;">About Me</h3>
             <section>
-                <h4 class="center-text">Radia</h4>
             </section>
         </div>
     </body>
