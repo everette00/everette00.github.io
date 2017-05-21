@@ -10,19 +10,22 @@
             }
 
             .header, .footer { background-color: #3086FF; }
+            .header { padding: 2rem; }
+            .footer { padding: 1rem; }
+
+            .header-link-row { margin-top: 1rem; }
+            .header-link { color: white; font-size: 1rem; }
             .footer { margin-top: 1rem;}
 
             .center-text { text-align: center; }
 
             @media only screen and (min-width:1080px) {
-                .header { height:15rem; }
-                .header-information { margin-top: 3rem; }
-                .header-link-bay { width: 21%; }
+                .header { padding: 3rem; }
+                .header-link { font-size: 1.5rem; color:white; padding:1rem; }
 
                 .detail { width: 70%; }
                 .divider { width:70%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
-                
-                .footer { height: 10rem;}
+            
                 .footer-icon { width: 4rem; margin-top: 2rem; margin-right: 1rem; }
                 .footer-bay { width: 70%; margin: 0 auto; }
             }
@@ -33,11 +36,8 @@
                 h4 { font-size: 1.3rem; }
                 h5 { font-size: 1rem; }
 
-                .header { padding-top:2rem; padding-bottom:1rem; }
-                .header-link { font-size: 1rem; color:white; padding-left: 1rem; padding-right: 1rem; }
-
-                .footer { padding-left:1rem; padding-right: 1rem; }
-                .footer-icon { width:2rem; margin-top:1.5rem; margin-right:.1rem;}
+                .header-link { padding:.5rem; font-size:1.1rem; }
+                .footer-icon { width:2rem; margin-right:.1rem;}
 
                 .detail { width: 90%; font-size: 1.1rem;}
 
@@ -70,9 +70,11 @@
                     </div>
                 </div>
 
-                <div class="menu menu-centered">
-                    <a href="#projects" class="header-link">Projects</a>
-                    <a href="#about-me" class="header-link">About Me</a>          
+                <div class="row menu menu-centered">
+                    <div class="header-link-row">
+                        <a href="#projects" class="header-link">Projects</a>
+                        <a href="#about-me" class="header-link">About Me</a>
+                    </div>        
                 </div>
             </div>
         </header>
@@ -160,7 +162,7 @@
         <footer class="footer">
             <div class="footer-bay row">
                 <div class="float-left">
-                    <h3 style="line-height: 1rem; color: white; margin:2rem 0;">Contact Me</h3>
+                    <h3 style="color: white;">Contact Me</h3>
                 </div>
                 <div class="float-right">
                     <a href="mailto:moseseverette@gmail.com?Subject=Interested%20in%20Portfolio">
