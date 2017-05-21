@@ -28,7 +28,10 @@
                 .footer-bay { width: 70%; margin: 0 auto; }
             }
 
-            @media only screen and (max-width:600px) {
+            @media only screen and (max-width:1080px) {
+                .header { padding-top:1rem; padding-bottom:1rem; }
+                .header-link-bay { margin-top: 1rem; }
+                .header-link { color:white;}
                 /*h1 { font-size: 2rem; }
                 h3 { font-size: 1rem; }
                 h4 { font-size: 1rem; }
@@ -58,9 +61,9 @@
                     </div>
                 </div>
 
-                <div class="header-link-bay">
-                    <a href="#projects" class="header-link" style="color:white;">Projects</a>
-                    <a href="#about-me" class="header-link" style="color:white;">About Me</a>               
+                <div class="row header-link-bay">
+                    <a href="#projects" class="header-link small-6 columns" style="text-align:right;">Projects</a>
+                    <a href="#about-me" class="header-link small-6 columns" style="text-align:left;">About Me</a>               
                 </div>
             </div>
         </header>
