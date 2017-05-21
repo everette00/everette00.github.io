@@ -11,7 +11,7 @@
 
             .header, .footer { background-color: #3086FF; }
             .header { padding: 2rem; }
-            .footer { padding: 0; margin-top: 1rem; }
+            .footer { padding-top: 1rem; padding-bottom: 1rem; margin-top: 1rem; }
 
             .header-link-row { margin-top: 1rem; }
             .header-link { color: white; font-size: 1rem; }
@@ -19,7 +19,7 @@
             .center-text { text-align: center; }
             .divider { margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
 
-            #contact-me { color: white; line-height: 0rem;}
+            #contact-me { color: white; margin-top: .25rem;}
 
             @media only screen and (min-width:1080px) {
                 .header { padding: 3rem; }
@@ -27,7 +27,7 @@
 
                 .footer-bay, .detail, .divider { width: 70%; }
 
-                .footer-icon { width: 3rem; height:3rem; }
+                .footer-icon { width: 3rem; padding:.1rem; }
             }
 
             @media only screen and (max-width:1080px) {
@@ -37,8 +37,8 @@
                 h5 { font-size: 1rem; }
 
                 .header-link { padding:.5rem; font-size:1.1rem; }
-                /*.footer-icon { width:1rem; height:1rem; line-height:1rem; }*/
-                .footer-icon { padding: .1rem; width:2rem; }
+                .footer-icon { width:2rem; padding: .1rem; }
+                .footer-bay { height:2rem; }
                 .footer-bay, .detail, .divider { width: 90%; }
                 .detail { font-size: 1.1rem; }
             }
@@ -133,20 +133,19 @@
             <div class="divider"></div>
             <section>
                 <div class="float-center detail" style="margin-top: 1rem;">
-                    I am a coder, tinkerer and a dreamer. I love to code new tools to simplify complex tasks.
-                    I believe tools are as much a solution as figuring out the problem itself. 
-                    I mean, why build a crude hammer for one task when you can just buy a hammer and user it over and over again?
+                    I am a coder, tinkerer and a dreamer. I love building new technologies and tools. 
+                    I want to build tools to help people, either to succeed or to improve their lives.
                     <br/><br/>
                     I also like the idea of rich content generation. Life is filled with stories, 
-                    and every moment we share with others is a story if its own. Applications that help people 
-                    capture those moments are amazing, and it is those application that I aspire to create.
+                    and the moments we share with others are their own story. Applications that help people 
+                    capture those moments are amazing, and those are the applications that I aspire to build.
                 </div>
             </section>
         </div>
         <footer class="footer">
             <div class="footer-bay row">
                 <div class="float-left">
-                    <!--<h3 id="contact-me">Contact Me</h3>-->
+                    <h3 id="contact-me">Contact Me</h3>
                 </div>
                 <div class="float-right">
                     <a href="mailto:moseseverette@gmail.com?Subject=Interested%20in%20Portfolio">
