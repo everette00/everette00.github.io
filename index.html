@@ -11,23 +11,22 @@
 
             .header, .footer { background-color: #3086FF; }
             .header { padding: 2rem; }
-            .footer { padding: 1rem; }
+            .footer { padding-top: 1rem; padding-bottom:1rem; margin-top: 1rem; }
 
             .header-link-row { margin-top: 1rem; }
             .header-link { color: white; font-size: 1rem; }
-            .footer { margin-top: 1rem;}
-
+            
             .center-text { text-align: center; }
+            .divider { margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
 
             @media only screen and (min-width:1080px) {
                 .header { padding: 3rem; }
-                .header-link { font-size: 1.5rem; color:white; padding:1rem; }
+                .header-link { font-size: 1.4rem; color:white; padding:1rem; }
 
-                .detail { width: 70%; }
-                .divider { width:70%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
-            
-                .footer-icon { width: 4rem; margin-top: 2rem; margin-right: 1rem; }
-                .footer-bay { width: 70%; margin: 0 auto; }
+                .footer-bay, .detail, .divider { width: 70%; }
+
+                .footer-icon { width: 3rem; height:3rem; }
+                /*.footer-bay { width: 70%; margin: 0 auto; }*/
             }
 
             @media only screen and (max-width:1080px) {
@@ -37,26 +36,10 @@
                 h5 { font-size: 1rem; }
 
                 .header-link { padding:.5rem; font-size:1.1rem; }
-                .footer-icon { width:2rem; margin-right:.1rem;}
+                .footer-icon { width:2rem; height:2rem; }
 
-                .detail { width: 90%; font-size: 1.1rem;}
-
-                /*h1 { font-size: 2rem; }
-                h3 { font-size: 1rem; }
-                h4 { font-size: 1rem; }
-                h5 { font-size: 1rem; }
-                div { font-size:1rem; }
-                
-                .header { height:10rem; }
-                .header-information { margin-top:2rem; }
-                .header-link-bay { width:82%; margin: 0 auto; }
-                .header-link { font-size:1rem; padding: 2rem;}
-
-                .detail { width: 95%; }
-                .divider { width:90%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
-
-                .footer { height: 5rem; }
-                .footer-icon { width: 3rem; margin-top: 1rem; margin-right: 1rem; }*/
+                .footer-bay, .detail, .divider { width: 90%; }
+                .detail { font-size: 1.1rem;}
             }
         </style>
     </head>
@@ -148,7 +131,7 @@
             <h3 id="about-me" class="center-text row" style="margin-top: 1rem;">About Me</h3>
             <div class="divider"></div>
             <section>
-                <div class="float-center detail">
+                <div class="float-center detail" style="margin-top: 1rem;">
                     I am a coder, tinkerer and a dreamer. I love to code new tools to simplify complex tasks.
                     I believe tools are as much a solution as figuring out the problem itself. 
                     I mean, why build a crude hammer for one task when you can just buy a hammer and user it over and over again?
