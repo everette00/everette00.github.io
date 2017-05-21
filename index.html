@@ -10,17 +10,24 @@
             }
 
             .center-text { text-align: center; }
-            .header-information { margin-top: 3rem; }
-            .header-link-bay { width: 21%; }
 
-            .detail { width: 70%; }
+            @media only screen and (min-width:1080px) {
+                .header { height:15rem; background-color: #2d5fa5; }
+                .header-information { margin-top: 3rem; }
+                .header-link-bay { width: 21%; }
 
-            @media only screen and (max-width:1000px) {
+                .detail { width: 70%; }
+                .divider { width:70%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
+                
+                .footer { height: 10rem; background-color: #2d5fa5; }
+            }
+
+            @media only screen and (max-width:1080px) {
                 html { 
                     -moz-text-size-adjust: none;
                     -webkit-text-size-adjust: none;
                 }
-                body { min-width: 800px; max-width: 1000px; }
+                body { min-width: 1080px; max-width: 1080px; }
                 h1 { font-size: 6rem; }
                 h3 { font-size: 4rem; }
                 h4 { font-size: 3.5rem; }
@@ -33,6 +40,9 @@
                 .header-link { font-size:3rem; padding: 2rem;}
 
                 .detail { width: 95%; }
+                .divider { width:90%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
+
+                .footer { height: 10rem; background-color: #2d5fa5; }
             }
         </style>
     </head>
@@ -57,7 +67,7 @@
 
         <div>
             <h3 id="projects" class="center-text row" style="margin-top: 2rem;">Projects</h3>
-            <div style="width:90%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px;"></div>
+            <div class="divider"></div>
             <section>
                 <h4 class="center-text" style="margin-top: 2rem;">
                     <a href="https://github.com/everette00/verbkit">Verbkit</a></h4>
@@ -82,7 +92,7 @@
                     <a href="https://github.com/everette00/codefoo">IGN Code Foo Application</a>
                 </h4>
                 <div class="float-center detail" style="margin-top:1rem;">
-                    This is my Github repo containing my application for the IGN Codfoo 2016 internship.
+                    This is my GitHub repo containing my application for the IGN Codfoo 2016 internship.
                     IGN required applicants to solve a few problems, the first being how many lego pieces
                     would be needed to rebuild the San-Francisco Golden Gate Bridge. Then we were asked to
                     choose one of three projects, or multiple projects, to build. I chose the AZERTY Keyboard,
@@ -110,17 +120,39 @@
             </section>
 
             <section>
-                <h4 class="center-text row" style="margin-top:3rem;">
+                <h4 class="center-text row" style="margin-top:2rem;">
                     <a href="https://github.com/everette00/radia">Radia</a>
                 </h4>
                 <div class="float-center detail">
-                    Radia is a 
+                    Radia is a location-based social media platform for sharing information with the world around you.
+                    It is designed to answer the <i>where</i> in the question. I can't say too much about it here, however, you can stay tuned on the GitHub
+                    page to learn more!
                 </div>
             </section>
 
             <h3 id="about-me" class="center-text row" style="margin-top: 2rem;">About Me</h3>
+            <div style="width:90%; margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px;"></div>
             <section>
+                <div class="float-center detail">
+                    I am a coder, tinkerer and a dreamer. I love to code new tools to simplify complex tasks.
+                    I believe tools are as much a solution as figuring out the problem itself. 
+                    I mean, why build a crude hammer for one task when you can just buy a hammer and user it over and over again?
+                    <br/><br/>
+                    I also like the idea of rich content generation. Life is filled with stories, 
+                    and every moment we share with others is a story if its own. Applications that help people 
+                    capture those moments are amazing, and it is those application that I aspire to create.
+                </div>
             </section>
         </div>
+        <footer class="footer">
+            <div style="width: 25.5%; margin: 0 auto;">
+                <a href="https://www.linkedin.com/in/everettemoses/" style="color: white;">
+                    <img src="./img/github.png" style="transform:scale(.55, .55);"/>
+                </a>
+                <a href="https://www.linkedin.com/in/everettemoses/" style="color: white;">
+                    <img src="./img/linkedin.png" style="transform:scale(.5, .5);"/>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
