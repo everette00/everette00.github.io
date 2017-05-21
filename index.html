@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <meta name="viewport" content="user-scalable=0;">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0;">
         <link rel="stylesheet" href="./css/foundation.css"/>
         <style>
             h1, h3, h5, div {
@@ -29,6 +29,7 @@
             }
 
             @media only screen and (max-width:1080px) {
+                html { min-width: 720px; }
                 body { min-width: 720px; max-width: 1080px; }
                 h1 { font-size: 6rem; }
                 h3 { font-size: 4rem; }
@@ -46,7 +47,6 @@
 
                 .footer { height: 10rem; }
                 .footer-icon { width: 6rem; margin-top: 1rem; margin-right: 2rem; }
-                .footer-bay { min-width:720px; }
             }
         </style>
     </head>
