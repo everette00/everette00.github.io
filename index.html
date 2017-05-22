@@ -20,6 +20,8 @@
             .center-text { text-align: center; }
             .divider { margin: 0 auto; border-bottom:1px #9a9a9a solid; height:1px; }
 
+            .screenshot { width: 200px; margin-top: 1rem; }
+
             #contact-me { color: white; }
 
             @media only screen and (min-width:1080px) {
@@ -30,6 +32,7 @@
                 
                 .footer-bay { height: 3rem; }
                 .footer-icon { width: 3rem; padding:.1rem; }
+                
                 #contact-me { line-height: 3rem; padding: .1rem; }
             }
 
@@ -45,13 +48,13 @@
                 .footer-icon { width:2rem; padding: .1rem; }
                 .footer-link:not(:last-of-type) { margin-right: .5rem; }
                 .footer-bay { height:2rem; }
-                
-                #contact-me { line-height:2rem; }
 
                 .detail { font-size: 1.1rem; }
+
+                #contact-me { line-height:2rem; }
             }
 
-            @media only screen and (max-width:1080px) and (min-width:700px) {
+            @media only screen and (min-width:700px) and (max-width:1080px) {
                 h1 { font-size: 3rem; }
                 h3 { font-size: 2rem; }
                 h4 { font-size: 1.5rem; }
@@ -63,10 +66,11 @@
                 .footer-icon { width:3rem; }
                 .footer-bay { height:3rem; }
                 .footer-link:not(:last-of-type) { margin-right: 1rem; }
+                .detail { font-size: 1.1rem; }
                 
                 #contact-me {line-height: 3rem; font-size: 1.8rem;}
 
-                .detail { font-size: 1.1rem; }
+            
             }
         </style>
     </head>
@@ -148,10 +152,18 @@
                     <a href="https://github.com/everette00/radia">Radia</a>
                 </h3>
                 <div class="float-center detail">
-                    Radia is a location-based social media platform for sharing information with the world around you.
-                    It is designed to answer the <i>where</i> in the question. I can't say too much about it here. 
-                    However, you can stay tuned on the GitHub
-                    page to learn more!
+                    Radia is a location-based social media platform for starting conversations within your community,
+                    and the communities around you. Posts around you generate land-marks that anyone posting content
+                    with similar tags are added to the conversation. You can also search for conversations of communities
+                    in other parts of the world, and share what you find with yours. Idealy, it attempts to answer the
+                    question: <i>where</i> along with the <i>who</i>, <i>what</i>, <i>when</i> and <i>how</i>.
+
+
+                    <div class="row screenshot-menu menu menu-centered">
+                        <img class="screenshot" src="./img/loginscreen.png" />
+                        <img class="screenshot" src="./img/newpost.png" />
+                        <img class="screenshot" src="./img/profilepage.png" />
+                    </div>
                 </div>
             </section>
 
