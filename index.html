@@ -33,7 +33,7 @@
                 #contact-me { line-height: 3rem; padding: .1rem; }
             }
 
-            @media only screen and (max-width:800px) {
+            @media only screen and (max-width:700px) {
                 h1 { font-size: 2rem; }
                 h3 { font-size: 1.5rem; }
                 h4 { font-size: 1.15rem; }
@@ -43,6 +43,7 @@
 
                 .footer-bay, .detail, .divider { width: 90%; }
                 .footer-icon { width:2rem; padding: .1rem; }
+                .footer-link:not(:last-of-type) { margin-right: .5rem; }
                 .footer-bay { height:2rem; }
                 
                 #contact-me { line-height:2rem; }
@@ -50,7 +51,7 @@
                 .detail { font-size: 1.1rem; }
             }
 
-            @media only screen and (max-width:1080px) and (min-width:800px) {
+            @media only screen and (max-width:1080px) and (min-width:700px) {
                 h1 { font-size: 3rem; }
                 h3 { font-size: 2rem; }
                 h4 { font-size: 1.5rem; }
@@ -59,10 +60,11 @@
                 .header-link { padding:.5rem; font-size:1.3rem; }
 
                 .footer-bay, .detail, .divider { width: 90%; }
-                .footer-icon { width:2rem; padding: .1rem; }
-                .footer-bay { height:2rem; }
+                .footer-icon { width:3rem; }
+                .footer-bay { height:3rem; }
+                .footer-link:not(:last-of-type) { margin-right: 1rem; }
                 
-                #contact-me {line-height: 2rem; font-size: 1.8rem;}
+                #contact-me {line-height: 3rem; font-size: 1.8rem;}
 
                 .detail { font-size: 1.1rem; }
             }
@@ -172,13 +174,13 @@
                     <h3 id="contact-me">Contact Me</h3>
                 </div>
                 <div class="float-right">
-                    <a href="mailto:moseseverette@gmail.com?Subject=Interested%20in%20Portfolio">
+                    <a href="mailto:moseseverette@gmail.com?Subject=Interested%20in%20Portfolio" class="footer-link">
                         <img src="./img/email_circle.png" class="footer-icon"/>
                     </a>
-                    <a href="https://github.com/everette00">
+                    <a href="https://github.com/everette00" class="footer-link">
                         <img src="./img/github_circle.png" class="footer-icon"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/everettemoses/">
+                    <a href="https://www.linkedin.com/in/everettemoses/" class="footer-link">
                         <img src="./img/linkedin_circle.png" class="footer-icon"/>
                     </a>
                 </div>
